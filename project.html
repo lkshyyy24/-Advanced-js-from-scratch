@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background color changer</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body>
+<div id="container">
+<h1>
+    Change the background 
+</h1>
+<div class="color-picker">
+    <div id="bgColor">
+    <label for="color">Choose a background color:</label>
+    </div>
+    <input type="button" class= "colors"id="red" name="color" value="click to change" style="background-color: red;height: 50px; width: 150px;border-radius: 10px;">
+    <input type="button" class= "colors"id="green" name="color" value="click to change" style="background-color: rgb(0, 255, 17);height: 50px; width: 150px;border-radius: 10px;">
+    <input type="button" class= "colors"id="blue" name="color" value="click to change" style="background-color: rgb(105, 0, 234);height: 50px; width: 150px;border-radius: 10px;">
+    <input type="button" class= "colors"id="yellow" name="color" value="click to change" style="background-color: rgb(246, 255, 0);height: 50px; width: 150px;border-radius: 10px;">
+    <input type="button" class= "colors"id="reset" name="color" value="reset" style="background-color: white;height: 50px; width: 150px;border-radius: 10px;">
+</div>
+</body>
+<script>
+     let redButton = document.querySelector('#red');
+     let greenButton = document.querySelector('#green');
+     let blueButton = document.querySelector('#blue');
+     let yellowButton = document.querySelector('#yellow');
+     let resetButton = document.querySelector('#reset');
+
+     redButton.addEventListener('click', () => {
+         document.body.style.backgroundColor = 'red';
+     });
+
+     greenButton.addEventListener('click', () => {
+         document.body.style.backgroundColor = 'rgb(0, 255, 17)';
+     });
+
+     blueButton.addEventListener('click', () => {
+         document.body.style.backgroundColor = 'rgb(105, 0, 234)';
+     });
+
+     yellowButton.addEventListener('click', () => {
+         document.body.style.backgroundColor = 'rgb(246, 255, 0)';
+
+     });
+     resetButton.addEventListener('click', () => {
+        document.body.style.backgroundColor = 'white';
+     });
+</script>
+</html>
