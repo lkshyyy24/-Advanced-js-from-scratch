@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+     
+    
+
+    <div class="main">
+        <h1>Guess the number</h1>
+        <input type="text" id="id" placeholder="enter the number">
+        <input type="submit" id="btn" value="submit">
+        <input type="text" id="id2" placeholder="result">
+    </div>
+    <script >
+        let guess = document.getElementById('id');
+let button = document.getElementById('btn');
+let result = document.getElementById('id2');
+
+let mathNumber= Math.floor(Math.random()*100)+1;
+    button.addEventListener('click', function(){
+        let userGuess = Number(guess.value);
+
+        if(userGuess === mathNumber){
+            result.value = 'you win';
+        }
+        else if(userGuess < mathNumber){ 
+            result.value = 'too low';
+        }
+        else if(userGuess > mathNumber){
+            result.value = 'too high';
+        }
+    });
+    </script>
+</body>
+</html>
