@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Mini Project </h1>
+    <button id="change">change</button>
+    <button id="reset">reset</button>
+</body>
+<script>
+    let change = document.querySelector('#change');
+    let heading = document.querySelector('h1')
+    let reset = document.querySelector('#reset');
+
+
+
+     let c =  () => {
+        heading.innerHTML = "lakshay"
+     }
+     let d = () => {
+        heading.innerHTML = "new project"
+     }
+    
+    change.addEventListener('click',() => {
+        setTimeout(c,2000) ;
+    });
+   reset.addEventListener('click',() => {
+        setTimeout(d,1000) ;
+    }); 
+</script>
+</html>
