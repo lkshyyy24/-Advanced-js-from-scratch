@@ -1,26 +1,45 @@
-button{
-    border-radius: 50px;
+.box {
+  height: 100px;
+  width: 90%;
+  border: 2px solid chartreuse;
+  box-shadow: 0 0 20px;
+  display: flex;
+  flex-wrap: wrap; /* 👈 allows items to go to next line */
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+
 }
-#container{
-    display: flex;
-    flex-direction: column;
+#text{
+    height: 30px;
+    width: 200px;
+    border-radius:10px ;
+    text-align: center;
     align-items: center;
-    border: 10px;
-    border-color: black;
-    border-style: solid;
-    border-radius: 40px;
-    height: 90vh;
-    width: 50vh;  
-    justify-content: center; 
+ 
+
+    font-weight: 500;
+    font-size: x-large;
+}
+button{
+    background-color: rgb(128, 255, 0);
+    margin: 10px;
+    border-radius: 10px;
+    height: 40px;
+    width: 600px;
     
+    font-weight: 500;
+    font-size: x-large;
+}
+.aiwei{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #6b6b6b;
+    background-color: rgb(0, 193, 51);
 }
-#id{
-    margin-top: 20px;
-}
+
